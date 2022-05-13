@@ -23,63 +23,72 @@ body
   display: block
 
 .nav
-  display: flex
-  justify-content: space-between
-  padding: 1rem 8rem
   background-color: $darkergray
-  flex-wrap: wrap
 
-  @media screen and (max-width: 760px)
-    padding: 1rem 2rem
-
-  @media screen and (max-width: 360px)
-    padding: 1rem 0.5rem
-
-  .title
-    color: $accent
-
-  .links
+  .content
+    justify-content: space-between
+    padding: 1rem 8rem
     display: flex
-    align-items: center
-    gap: 1.5rem
+    flex-wrap: wrap
+    max-width: 960px
+    margin: 0 auto
+
+    @media screen and (max-width: 1200px)
+      padding: 1rem 4rem
+
+    @media screen and (max-width: 760px)
+      padding: 1rem 2rem
 
     @media screen and (max-width: 360px)
-      width: 100%
-      padding: 0 0.5rem
+      padding: 1rem 0.5rem
 
-    .nav-link
-      text-decoration: none
-      color: $gray
+    .title
+      color: $accent
 
-    .active
-      color: $white
-      font-weight: 500
-
-    @media screen and (max-width: 760px)
-      display: none
-
-  .break
-    flex-basis: 100%
-
-  .nav-toggle
-    display: none
-
-    @media screen and (max-width: 760px)
+    .links
       display: flex
       align-items: center
+      gap: 1.5rem
 
-    svg
-      width: 2rem
-      height: auto
-      fill: $white
+      @media screen and (max-width: 360px)
+        width: 100%
+        padding: 0 0.5rem
+
+      .nav-link
+        text-decoration: none
+        color: $gray
+
+      .active
+        color: $white
+        font-weight: 500
+
+      @media screen and (max-width: 760px)
+        display: none
+
+    .break
+      flex-basis: 100%
+
+    .nav-toggle
+      display: none
+
+      @media screen and (max-width: 760px)
+        display: flex
+        align-items: center
+
+      svg
+        width: 2rem
+        height: auto
+        fill: $white
 
 .intro
   text-align: center
   position: relative
   top: -5rem
-  margin: 2rem
-  margin-bottom: -2rem
-  margin-top: 0
+  margin: 0 2rem -2rem 2rem
+
+  @media screen and (min-width: 960px)
+    max-width: 960px
+    margin: 0 auto -2rem auto
 
   @media screen and (max-width: 760px)
     top: 0
@@ -119,6 +128,10 @@ body
 
   .projects-container
     display: flex
+
+    @media screen and (min-width: 960px)
+      max-width: 960px
+      margin: 0 auto
 
     @media screen and (max-width: 760px)
       display: block
