@@ -6,7 +6,7 @@ const Nav = () => {
                 setMobileExpanded(!mobileExpanded)
         }
         const linkStyle = {
-                display: mobileExpanded ? 'flex' : 'none',
+                display: mobileExpanded ? 'flex' : '',
                 transition: 'all 1s ease-in-out',
         }
 
