@@ -27,6 +27,10 @@ body
   justify-content: space-between
   padding: 1rem 8rem
   background-color: $darkergray
+  flex-wrap: wrap
+
+  @media screen and (max-width: 760px)
+    padding: 1em 2em
 
   .title
     color: $accent
@@ -35,18 +39,45 @@ body
     display: flex
     align-items: center
     gap: 1.5rem
+
     .nav-link
       text-decoration: none
       color: $gray
+
     .active
       color: $white
       font-weight: 500
+
+    @media screen and (max-width: 760px)
+      display: none
+
+  .break
+    flex-basis: 100%
+
+  .nav-toggle
+    display: none
+
+    @media screen and (max-width: 760px)
+      display: flex
+      align-items: center
+
+    svg
+      width: 2rem
+      height: auto
+      fill: $white
 
 .intro
   text-align: center
   position: relative
   top: -5rem
+  margin: 2rem
   margin-bottom: -2rem
+  margin-top: 0
+
+  @media screen and (max-width: 760px)
+    top: 0
+    margin-bottom: 0
+    padding: 2em 0
 
   .portrait
     width: 22.5rem
@@ -82,10 +113,17 @@ body
 
   .projects-container
     display: flex
+
+    @media screen and (max-width: 760px)
+      display: block
+
     justify-content: space-around
 
     .project
       width: 30%
+
+      @media screen and (max-width: 760px)
+        width: 100%
 
       img
 

@@ -5,6 +5,7 @@ import mcapi from './image/mcapi.png'
 import waveTop from './image/wave-top.svg'
 import waveBottom from './image/wave-bottom.svg'
 import portraitTransparent from './image/portrait-transparent.png'
+import burger from './image/burger.svg'
 
 export {
         portrait,
@@ -14,4 +15,5 @@ export {
         mcapi,
         waveTop,
         waveBottom,
+        burger,
 }
