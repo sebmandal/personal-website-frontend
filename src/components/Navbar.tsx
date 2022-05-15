@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import { waveBottom } from '../Images'
 
-const Nav = () => {
+interface NavbarOptions {
+        pageTitle: string
+}
+const Nav = (props: NavbarOptions) => {
         const [mobileExpanded, setMobileExpanded] = useState(false)
         const handleClick = () => {
                 setMobileExpanded(!mobileExpanded)
@@ -40,20 +43,38 @@ const Nav = () => {
                                                 style={linkStyle}
                                         >
                                                 <a
-                                                        className="nav-link active"
-                                                        href="#"
+                                                        className={
+                                                                'nav-link ' +
+                                                                (props.pageTitle ===
+                                                                'home'
+                                                                        ? 'active'
+                                                                        : '')
+                                                        }
+                                                        href="/"
                                                 >
                                                         Home
                                                 </a>
                                                 <a
-                                                        className="nav-link"
-                                                        href="#"
+                                                        className={
+                                                                'nav-link ' +
+                                                                (props.pageTitle ===
+                                                                'services'
+                                                                        ? 'active'
+                                                                        : '')
+                                                        }
+                                                        href="/services"
                                                 >
                                                         Services
                                                 </a>
                                                 <a
-                                                        className="nav-link"
-                                                        href="#"
+                                                        className={
+                                                                'nav-link ' +
+                                                                (props.pageTitle ===
+                                                                'cv'
+                                                                        ? 'active'
+                                                                        : '')
+                                                        }
+                                                        href="/cv"
                                                 >
                                                         CV
                                                 </a>

@@ -1,9 +1,9 @@
-import { portraitTransparent } from '../Images'
+import { portraitTransparent } from '../../Images'
 
 const Intro = () => {
         return (
                 <>
-                        <section className="intro">
+                        <section className="index-intro">
                                 <div className="portrait">
                                         <img
                                                 src={portraitTransparent}
