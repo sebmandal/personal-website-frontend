@@ -1,0 +1,17 @@
+const WaveTop = () => {
+        return (
+                <svg
+                        className="wave"
+                        viewBox="0 0 1440 50"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                        <path
+                                d="M0 27.8409H349.922C606.664 27.8409 859.771 0 1080 0C1300.23 0 1440 27.8409 1440 27.8409V50H0V27.8409Z"
+                                fill="#333333"
+                        />
+                </svg>
+        )
+}
+
+export default WaveTop
