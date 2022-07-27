@@ -1,10 +1,12 @@
 import Project from './Project'
-import { tebone, salvus, mcapi, waveTop, waveBottom } from '../../Images'
+import WaveTop from '../svgs/WaveTop'
+import WaveBottom from '../svgs/WaveBottom'
+import { tebone, salvus, mcapi } from '../../Images'
 
 const Projects = () => {
         return (
                 <>
-                        <img src={waveTop} alt="wave effect" className="wave" />
+                        <WaveTop />
 
                         <section className="index-projects">
                                 <h1 className="title">My favorite projects</h1>
@@ -29,11 +31,7 @@ const Projects = () => {
                                 </div>
                         </section>
 
-                        <img
-                                src={waveBottom}
-                                alt="wave effect"
-                                className="wave"
-                        />
+                        <WaveBottom />
                 </>
         )
 }

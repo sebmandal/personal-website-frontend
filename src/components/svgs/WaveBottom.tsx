@@ -1,0 +1,17 @@
+const WaveBottom = () => {
+        return (
+                <svg
+                        className="wave"
+                        viewBox="0 0 1440 50"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                        <path
+                                d="M1440 22.1591H1090.08C833.336 22.1591 580.229 50 360 50C139.771 50 0 22.1591 0 22.1591V0H1440V22.1591Z"
+                                fill="#333333"
+                        />
+                </svg>
+        )
+}
+
+export default WaveBottom
